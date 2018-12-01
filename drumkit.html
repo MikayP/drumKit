@@ -13,17 +13,32 @@
 
 
     <div class="oneBeat">
-      <button id="notes" onclick="playSound()"></button>
-      <!-- <button class="notes"></button>
-      <button class="notes"></button>
-      <button class="notes"></button>
-      <button class="notes"></button>
-      <button class="notes"></button> -->
+      <button class="notes" onmousedown="audio1.play()"></button>
+      <button class="notes" onmousedown="audio2.play()"></button>
+      <button class="notes" onmousedown="audio3.play()"></button>
+      <button class="notes" onmousedown="audio4.play()"></button>
+      <button class="notes" onmousedown="audio5.play()"></button>
+      <button class="notes" onmousedown="audio6.play()"></button>
     </div>
 
-
+    <audio class="audio1" src="audio/Audio (1).mp3"></audio>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="drums.js"></script>
-    <audio class="audio1" src="audio/Audio (1).mp3"></audio>
+
+    <script>
+    var audio1 = new Audio();
+    audio1.src = "audio/Audio (1).mp3"
+    var audio2 = new Audio();
+    audio2.src = "audio/Audio (2).mp3"
+    var audio3 = new Audio();
+    audio3.src = "audio/Audio (2).wav"
+    var audio4 = new Audio();
+    audio4.src = "audio/Audio (3).wav"
+    var audio5 = new Audio();
+    audio5.src = "audio/Audio (4).wav"
+    var audio6 = new Audio();
+    audio6.src = "audio/Audio (5).wav"
+
+    </script>
 </body>
 </html>
